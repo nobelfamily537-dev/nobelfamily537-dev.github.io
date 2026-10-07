@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AniPix — Anime Wallpapers, Live Wallpapers &amp; More</title>
+<meta name="description" content="AniPix — 2400+ HD anime wallpapers, live wallpapers, daily updates, smart search. Free for Android.">
+<meta property="og:title" content="AniPix — Anime Wallpapers">
+<meta property="og:description" content="2400+ HD anime wallpapers, live wallpapers, daily updates. Free for Android.">
+<meta property="og:image" content="assets/icon.png">
+<link rel="icon" href="assets/icon.png">
+<style>
+  :root{
+    --bg:#060a18; --card:#101a36; --surface:#0d1428; --surface2:#141d3a;
+    --stroke:#26355a; --text:#e8e8f0; --sub:#8a9ac0;
+    --accent:#3b82f6; --accent2:#8b5cf6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--bg); color:var(--text); font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+    background-image:radial-gradient(900px 500px at 15% -10%,rgba(59,130,246,.18),transparent 60%),
+                     radial-gradient(800px 500px at 90% 0%,rgba(139,92,246,.16),transparent 60%);
+    background-repeat:no-repeat;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  a{color:inherit;text-decoration:none}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(12px);
+      background:rgba(6,10,24,.72);border-bottom:1px solid var(--stroke)}
+  nav .wrap{display:flex;align-items:center;gap:14px;height:62px}
+  nav img{width:30px;height:30px;border-radius:9px}
+  nav b{font-size:17px;letter-spacing:.3px}
+  nav .links{margin-left:auto;display:flex;gap:20px;font-size:14px;color:var(--sub)}
+  nav .links a:hover{color:var(--text)}
+  @media(max-width:620px){nav .links{display:none}}
+
+  /* hero */
+  header{padding:64px 0 40px;text-align:center}
+  .heroIcon{width:112px;height:112px;border-radius:26px;box-shadow:0 18px 50px rgba(59,130,246,.35)}
+  h1{font-size:clamp(38px,7vw,60px);line-height:1.05;margin:22px 0 8px;letter-spacing:-1px;
+     background:linear-gradient(120deg,#fff,#bcd2ff 45%,#c4b5fd);
+     -webkit-background-clip:text;background-clip:text;color:transparent}
+  .tag{color:var(--sub);font-size:clamp(15px,2.4vw,19px);max-width:620px;margin:0 auto}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:30px}
+  .btn{display:inline-flex;align-items:center;gap:9px;padding:14px 26px;border-radius:14px;
+       font-weight:700;font-size:15px;border:1px solid transparent;transition:.2s}
+  .btn.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;
+       box-shadow:0 10px 30px rgba(59,130,246,.35)}
+  .btn.primary:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(59,130,246,.45)}
+  .btn.ghost{border-color:var(--stroke);background:var(--surface);color:var(--text)}
+  .btn.ghost:hover{border-color:var(--accent)}
+  .small{color:var(--sub);font-size:13px;margin-top:14px}
+
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:46px 0 10px}
+  @media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
+  .stat{background:var(--card);border:1px solid var(--stroke);border-radius:18px;padding:20px 16px;text-align:center}
+  .stat b{display:block;font-size:24px;background:linear-gradient(120deg,var(--accent),var(--accent2));
+          -webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat span{color:var(--sub);font-size:13px}
+
+  /* sections */
+  section{padding:56px 0}
+  h2{font-size:clamp(24px,4vw,34px);text-align:center;margin-bottom:10px;letter-spacing:-.5px}
+  .sub2{text-align:center;color:var(--sub);margin-bottom:34px;font-size:15px}
+
+  /* shots */
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  @media(max-width:720px){.shots{grid-template-columns:1fr;max-width:320px;margin:0 auto}}
+  .shot{background:var(--card);border:1px solid var(--stroke);border-radius:22px;padding:10px;overflow:hidden}
+  .shot img{width:100%;display:block;border-radius:14px}
+
+  /* features */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  @media(max-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.grid{grid-template-columns:1fr}}
+  .feat{background:var(--card);border:1px solid var(--stroke);border-radius:18px;padding:20px;transition:.2s}
+  .feat:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .feat .ic{font-size:24px}
+  .feat h3{font-size:16px;margin:10px 0 6px}
+  .feat p{color:var(--sub);font-size:14px}
+
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  @media(max-width:860px){.steps{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.steps{grid-template-columns:1fr}}
+  .step{background:var(--surface2);border:1px solid var(--stroke);border-radius:18px;padding:20px}
+  .step .n{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-weight:800;font-size:14px;
+           background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;margin-bottom:12px}
+  .step h3{font-size:15px;margin-bottom:5px}
+  .step p{color:var(--sub);font-size:13.5px}
+
+  /* faq */
+  details{background:var(--card);border:1px solid var(--stroke);border-radius:16px;padding:16px 18px;margin-bottom:12px}
+  details summary{cursor:pointer;font-weight:700;font-size:15px;list-style:none}
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"+";float:right;color:var(--accent);font-weight:800}
+  details[open] summary::after{content:"–"}
+  details p{color:var(--sub);font-size:14px;margin-top:10px}
+
+  /* footer */
+  footer{border-top:1px solid var(--stroke);padding:34px 0 46px;text-align:center;color:var(--sub);font-size:13.5px}
+  footer .flinks{display:flex;gap:18px;justify-content:center;margin-bottom:14px;flex-wrap:wrap}
+  footer .flinks a:hover{color:var(--text)}
+  .banner{width:100%;border-radius:22px;border:1px solid var(--stroke);display:block;margin-bottom:30px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <img src="assets/icon.png" alt="AniPix">
+    <b>AniPix</b>
+    <div class="links">
+      <a href="#screens">Screenshots</a>
+      <a href="#features">Features</a>
+      <a href="#install">Install</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </div>
+</nav>
+
+<header class="wrap">
+  <img class="heroIcon" src="assets/icon.png" alt="AniPix app icon">
+  <h1>AniPix</h1>
+  <p class="tag">2400+ HD anime wallpapers, live wallpapers, daily updates and a smart search that forgives typos. Free, ad-supported, made by an anime fan.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/nobelfamily537-dev/AniPix-Walls/releases/latest/download/anipix-v188.apk">
+      ⬇&nbsp; Download APK
+    </a>
+    <a class="btn ghost" href="https://github.com/nobelfamily537-dev/AniPix-Walls/releases">View releases</a>
+  </div>
+  <p class="small">Android 7.0+ · ~15 MB · No Play Store needed · 100% free</p>
+
+  <div class="stats">
+    <div class="stat"><b>2400+</b><span>Wallpapers</span></div>
+    <div class="stat"><b>8</b><span>Categories</span></div>
+    <div class="stat"><b>Daily</b><span>New updates</span></div>
+    <div class="stat"><b>Free</b><span>Forever</span></div>
+  </div>
+</header>
+
+<section class="wrap" id="screens">
+  <img class="banner" src="assets/cover.png" alt="AniPix preview">
+  <h2>See it in action</h2>
+  <p class="sub2">A clean, fast gallery built for anime fans.</p>
+  <div class="shots">
+    <div class="shot"><img src="assets/shot1.png" alt="AniPix home"></div>
+    <div class="shot"><img src="assets/shot2.png" alt="AniPix categories"></div>
+    <div class="shot"><img src="assets/shot3.png" alt="AniPix viewer"></div>
+  </div>
+</section>
+
+<section class="wrap" id="features">
+  <h2>Everything you need</h2>
+  <p class="sub2">Packed with features you normally pay for.</p>
+  <div class="grid">
+    <div class="feat"><div class="ic">🖼️</div><h3>2400+ HD wallpapers</h3><p>Anime, games, gods, nature, space and AI art — all 1080×1920, phone-ready.</p></div>
+    <div class="feat"><div class="ic">🎬</div><h3>Live wallpapers</h3><p>Real animated video wallpapers that keep playing in the background.</p></div>
+    <div class="feat"><div class="ic">🔍</div><h3>Smart search</h3><p>Aliases and typo-tolerance — “jjk” finds Jujutsu Kaisen, “itatchi” finds Itachi.</p></div>
+    <div class="feat"><div class="ic">💬</div><h3>Comments &amp; likes</h3><p>Talk about your favourite wallpapers with the community.</p></div>
+    <div class="feat"><div class="ic">🔔</div><h3>Instant notifications</h3><p>Get pinged the moment new wallpapers or notices drop.</p></div>
+    <div class="feat"><div class="ic">👤</div><h3>Profiles &amp; badges</h3><p>Coins, streaks and donor badges — tap any user in chat to see their card.</p></div>
+    <div class="feat"><div class="ic">❤️</div><h3>Favourites &amp; Loved</h3><p>Save wallpapers and discover what the community loves most.</p></div>
+    <div class="feat"><div class="ic">⭐</div><h3>Ratings</h3><p>Rate wallpapers and help the best ones rise to the top.</p></div>
+    <div class="feat"><div class="ic">📅</div><h3>Today’s pick</h3><p>A fresh wallpaper every day, right on the Today tab.</p></div>
+    <div class="feat"><div class="ic">🔒</div><h3>Home &amp; lock screen</h3><p>Set on the home screen, lock screen or both in one tap.</p></div>
+    <div class="feat"><div class="ic">🆓</div><h3>Watch &amp; earn coins</h3><p>Earn coins with short ads to unlock live wallpapers.</p></div>
+    <div class="feat"><div class="ic">📶</div><h3>Offline favourites</h3><p>Download wallpapers and keep them even without internet.</p></div>
+  </div>
+</section>
+
+<section class="wrap" id="install">
+  <h2>Install in 4 steps</h2>
+  <p class="sub2">No Play Store — direct APK, always the newest version.</p>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Download the APK</h3><p>Tap the download button above (about 15 MB).</p></div>
+    <div class="step"><div class="n">2</div><h3>Allow install</h3><p>Android will ask to allow installing from this source — tap Allow.</p></div>
+    <div class="step"><div class="n">3</div><h3>Open AniPix</h3><p>The app opens straight into the wallpaper gallery.</p></div>
+    <div class="step"><div class="n">4</div><h3>Updates are automatic</h3><p>AniPix checks for new versions and updates itself.</p></div>
+  </div>
+</section>
+
+<section class="wrap" id="faq">
+  <h2>Questions</h2>
+  <p class="sub2">Quick answers.</p>
+  <details><summary>Is AniPix free?</summary><p>Yes. AniPix is completely free and supported by short ads. There is no subscription and no Play Store purchase.</p></details>
+  <details><summary>Do I need to sign in?</summary><p>No — you can browse and set wallpapers without signing in. Sign in with Google only if you want coins, favourites sync, comments or chat.</p></details>
+  <details><summary>Where do the wallpapers come from?</summary><p>New wallpapers are added every day from public anime art collections. If you own an image and want it removed, just contact us.</p></details>
+  <details><summary>Why is it not on the Play Store?</summary><p>AniPix is a small indie project, so it ships as a direct APK. That also means updates reach you faster.</p></details>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="flinks">
+      <a href="https://github.com/nobelfamily537-dev/AniPix-Walls/releases">Releases</a>
+      <a href="https://github.com/nobelfamily537-dev">GitHub</a>
+      <a href="https://t.me/Lovelyanime_admin">Telegram</a>
+      <a href="https://anipix.itch.io/anipix">itch.io</a>
+    </div>
+    <p>© <span id="y"></span> AniPix · Made by an anime fan, for anime fans.</p>
+    <p style="margin-top:6px">All artwork belongs to its original creators.</p>
+  </div>
+</footer>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
