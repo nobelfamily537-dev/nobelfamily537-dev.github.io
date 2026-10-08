@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AniPix — HD Anime Wallpapers, Live Wallpapers &amp; Daily Updates</title>
+<title>AniPix — HD Anime Wallpapers &amp; Live Wallpapers for Android</title>
 <meta name="description" content="AniPix is a free Android app with 2400+ HD anime wallpapers, animated live wallpapers, smart typo-tolerant search and daily updates. Direct APK — no Play Store needed.">
 <meta name="theme-color" content="#060a18">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AniPix — Anime Wallpapers for Android">
 <meta property="og:description" content="2400+ HD anime wallpapers, live wallpapers, daily updates. Free for Android.">
-<meta property="og:image" content="assets/cover.png">
+<meta property="og:image" content="assets/icon.png">
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <style>
@@ -18,43 +18,42 @@
     --stroke2:#2c3d63; --text:#eaeefb; --sub:#8b9cc4; --sub2:#6d7fa8;
     --accent:#3b82f6; --accent2:#8b5cf6;
     --grad:linear-gradient(135deg,#3b82f6,#8b5cf6);
-    --r:16px; --maxw:1120px;
+    --r:16px; --maxw:1080px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
   body{
     background:var(--bg); color:var(--text);
     font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
-    line-height:1.65; letter-spacing:-.011em; -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
+    line-height:1.65; letter-spacing:-.011em; -webkit-font-smoothing:antialiased; overflow-x:hidden;
   }
   body::before{
     content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
     background:
-      radial-gradient(760px 420px at 12% -8%,rgba(59,130,246,.16),transparent 62%),
-      radial-gradient(680px 420px at 92% -4%,rgba(139,92,246,.14),transparent 62%),
-      radial-gradient(900px 600px at 50% 108%,rgba(59,130,246,.07),transparent 65%);
+      radial-gradient(700px 400px at 12% -8%,rgba(59,130,246,.16),transparent 62%),
+      radial-gradient(640px 400px at 92% -4%,rgba(139,92,246,.14),transparent 62%),
+      radial-gradient(900px 560px at 50% 106%,rgba(59,130,246,.06),transparent 65%);
   }
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;width:100%}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;width:100%}
   a{color:inherit;text-decoration:none}
   img{max-width:100%;display:block}
 
-  /* ---------- nav ---------- */
-  nav{position:sticky;top:0;z-index:50;background:rgba(6,10,24,.78);
+  /* nav */
+  nav{position:sticky;top:0;z-index:50;background:rgba(6,10,24,.8);
       backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
       border-bottom:1px solid rgba(34,48,79,.7)}
-  nav .wrap{display:flex;align-items:center;gap:12px;height:64px}
-  nav .brand{display:flex;align-items:center;gap:10px;font-weight:750;font-size:16.5px;letter-spacing:-.02em}
-  nav .brand img{width:31px;height:31px;border-radius:9px;box-shadow:0 4px 14px rgba(59,130,246,.35)}
-  nav .links{margin-left:auto;display:flex;gap:26px;font-size:14px;color:var(--sub);font-weight:500}
+  nav .wrap{display:flex;align-items:center;gap:11px;height:62px}
+  nav .brand{display:flex;align-items:center;gap:10px;font-weight:750;font-size:16px;letter-spacing:-.02em}
+  nav .brand img{width:30px;height:30px;border-radius:9px;box-shadow:0 4px 14px rgba(59,130,246,.4)}
+  nav .links{margin-left:auto;display:flex;gap:24px;font-size:14px;color:var(--sub);font-weight:500}
   nav .links a{transition:color .18s}
   nav .links a:hover{color:var(--text)}
   nav .navcta{display:none}
   @media(max-width:760px){nav .links{display:none} nav .navcta{display:inline-flex;margin-left:auto}}
 
-  /* ---------- buttons ---------- */
+  /* buttons */
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
-       padding:14px 26px;border-radius:13px;font-weight:650;font-size:15px;
+       padding:14px 25px;border-radius:13px;font-weight:650;font-size:15px;
        border:1px solid transparent;transition:transform .18s,box-shadow .18s,border-color .18s,background .18s;
        white-space:nowrap;cursor:pointer}
   .btn svg{width:18px;height:18px;flex:none}
@@ -62,109 +61,108 @@
   .btn.primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px -8px rgba(59,130,246,.7)}
   .btn.ghost{border-color:var(--stroke2);background:rgba(19,29,59,.55);color:var(--text)}
   .btn.ghost:hover{border-color:var(--accent);background:rgba(19,29,59,.95)}
-  .btn.sm{padding:10px 18px;font-size:14px;border-radius:11px}
+  .btn.sm{padding:10px 17px;font-size:14px;border-radius:11px}
 
-  /* ---------- hero ---------- */
-  header{padding:76px 0 30px;text-align:center;position:relative}
+  /* hero */
+  header{padding:60px 0 20px;text-align:center}
   .pill{display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:999px;
         border:1px solid var(--stroke2);background:rgba(19,29,59,.6);
-        font-size:12.5px;font-weight:600;color:var(--sub);letter-spacing:.01em}
+        font-size:12.5px;font-weight:600;color:var(--sub)}
   .pill .dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.16)}
-  .heroIcon{width:104px;height:104px;border-radius:25px;margin:26px auto 0;
-            box-shadow:0 22px 55px -12px rgba(59,130,246,.6),0 0 0 1px rgba(255,255,255,.06)}
-  h1{font-size:clamp(42px,8vw,72px);line-height:1;margin:22px 0 14px;letter-spacing:-.045em;font-weight:800;
+  .heroIcon{width:96px;height:96px;border-radius:23px;margin:24px auto 0;
+            box-shadow:0 20px 50px -12px rgba(59,130,246,.6),0 0 0 1px rgba(255,255,255,.06)}
+  h1{font-size:clamp(40px,7.5vw,68px);line-height:1;margin:20px 0 14px;letter-spacing:-.045em;font-weight:800;
      background:linear-gradient(115deg,#ffffff 8%,#c3d6ff 48%,#c9b6ff 92%);
      -webkit-background-clip:text;background-clip:text;color:transparent}
-  .tag{color:var(--sub);font-size:clamp(15.5px,2.3vw,19px);max-width:640px;margin:0 auto;line-height:1.6}
-  .cta{display:flex;gap:13px;justify-content:center;flex-wrap:wrap;margin-top:32px}
-  .meta{color:var(--sub2);font-size:13px;margin-top:16px;display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
+  .tag{color:var(--sub);font-size:clamp(15.5px,2.3vw,18.5px);max-width:620px;margin:0 auto;line-height:1.6}
+  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+  .meta{color:var(--sub2);font-size:13px;margin-top:15px;display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
   .meta span{display:inline-flex;align-items:center;gap:9px}
   .meta span+span::before{content:"";width:3px;height:3px;border-radius:50%;background:var(--stroke2)}
 
-  /* ---------- stats ---------- */
-  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:52px 0 4px}
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:44px 0 0}
   @media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
   .stat{background:linear-gradient(180deg,rgba(19,29,59,.85),rgba(14,23,48,.85));
-        border:1px solid var(--stroke);border-radius:var(--r);padding:22px 14px}
-  .stat b{display:block;font-size:26px;font-weight:800;letter-spacing:-.03em;
+        border:1px solid var(--stroke);border-radius:var(--r);padding:19px 12px}
+  .stat b{display:block;font-size:25px;font-weight:800;letter-spacing:-.03em;
           background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
   .stat span{color:var(--sub);font-size:12.5px;font-weight:500}
 
-  /* ---------- sections ---------- */
-  section{padding:74px 0}
-  .eyebrow{text-align:center;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-           color:var(--accent);margin-bottom:12px}
-  h2{font-size:clamp(26px,4.4vw,38px);text-align:center;letter-spacing:-.035em;font-weight:780;line-height:1.15}
-  .lead{text-align:center;color:var(--sub);margin:14px auto 0;font-size:15.5px;max-width:560px}
+  /* sections */
+  section{padding:62px 0}
+  .eyebrow{text-align:center;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+           color:var(--accent);margin-bottom:10px}
+  h2{font-size:clamp(25px,4.3vw,36px);text-align:center;letter-spacing:-.035em;font-weight:780;line-height:1.15}
+  .lead{text-align:center;color:var(--sub);margin:12px auto 0;font-size:15.5px;max-width:540px}
 
-  /* ---------- showcase ---------- */
-  .coverWrap{margin:40px 0 40px;border-radius:20px;overflow:hidden;border:1px solid var(--stroke);
-             box-shadow:0 30px 70px -30px rgba(0,0,0,.85)}
-  .phones{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;max-width:880px;margin:0 auto}
-  @media(max-width:760px){.phones{grid-template-columns:1fr;max-width:270px;gap:30px}}
-  .phone{position:relative;border-radius:32px;padding:9px;background:#0a1024;
-         border:1px solid var(--stroke2);box-shadow:0 26px 60px -26px rgba(0,0,0,.9),inset 0 0 0 1px rgba(255,255,255,.03)}
-  .phone::after{content:"";position:absolute;top:9px;left:50%;transform:translateX(-50%);
-                width:34%;height:16px;background:#0a1024;border-radius:0 0 12px 12px;z-index:2}
-  .phone img{border-radius:24px;width:100%}
-  .phone:hover{transform:translateY(-4px);transition:transform .25s}
+  /* wallpaper showcase */
+  .walls{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
+  @media(max-width:860px){.walls{grid-template-columns:repeat(2,1fr);gap:14px}}
+  .wall{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--stroke2);
+        background:#0a1024;box-shadow:0 22px 50px -24px rgba(0,0,0,.95);transition:transform .25s,border-color .25s}
+  .wall:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .wall img{width:100%;aspect-ratio:9/16;object-fit:cover}
+  .wall .lbl{position:absolute;left:9px;bottom:9px;right:9px;font-size:11px;font-weight:650;
+             letter-spacing:.02em;color:#fff;background:rgba(6,10,24,.62);backdrop-filter:blur(8px);
+             border:1px solid rgba(255,255,255,.09);border-radius:9px;padding:6px 10px;text-align:center}
 
-  /* ---------- features ---------- */
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:46px}
+  /* features */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:40px}
   @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:560px){.grid{grid-template-columns:1fr}}
   .feat{background:linear-gradient(180deg,rgba(19,29,59,.7),rgba(14,23,48,.7));
-        border:1px solid var(--stroke);border-radius:var(--r);padding:22px;transition:border-color .2s,transform .2s}
+        border:1px solid var(--stroke);border-radius:var(--r);padding:20px;transition:border-color .2s,transform .2s}
   .feat:hover{border-color:var(--stroke2);transform:translateY(-3px)}
-  .feat .ic{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;
+  .feat .ic{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
             background:linear-gradient(135deg,rgba(59,130,246,.16),rgba(139,92,246,.16));
-            border:1px solid rgba(59,130,246,.25);margin-bottom:15px}
+            border:1px solid rgba(59,130,246,.25);margin-bottom:14px}
   .feat .ic svg{width:19px;height:19px;stroke:#8ab4ff;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
-  .feat h3{font-size:15.5px;font-weight:670;margin-bottom:7px;letter-spacing:-.015em}
+  .feat h3{font-size:15.5px;font-weight:670;margin-bottom:6px;letter-spacing:-.015em}
   .feat p{color:var(--sub);font-size:13.8px;line-height:1.6}
 
-  /* ---------- steps ---------- */
-  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:46px}
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:40px}
   @media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:520px){.steps{grid-template-columns:1fr}}
-  .step{background:rgba(14,23,48,.75);border:1px solid var(--stroke);border-radius:var(--r);padding:22px;position:relative}
-  .step .n{width:32px;height:32px;border-radius:10px;display:grid;place-items:center;
-           font-weight:800;font-size:14px;background:var(--grad);color:#fff;margin-bottom:14px;
+  .step{background:rgba(14,23,48,.75);border:1px solid var(--stroke);border-radius:var(--r);padding:20px}
+  .step .n{width:31px;height:31px;border-radius:10px;display:grid;place-items:center;
+           font-weight:800;font-size:14px;background:var(--grad);color:#fff;margin-bottom:13px;
            box-shadow:0 8px 20px -8px rgba(59,130,246,.8)}
-  .step h3{font-size:15px;font-weight:670;margin-bottom:6px}
+  .step h3{font-size:15px;font-weight:670;margin-bottom:5px}
   .step p{color:var(--sub);font-size:13.5px;line-height:1.6}
 
-  /* ---------- faq ---------- */
-  .faq{max-width:780px;margin:44px auto 0}
+  /* faq */
+  .faq{max-width:760px;margin:38px auto 0}
   details{background:rgba(14,23,48,.72);border:1px solid var(--stroke);border-radius:14px;
-          padding:0;margin-bottom:11px;overflow:hidden;transition:border-color .2s}
+          margin-bottom:10px;overflow:hidden;transition:border-color .2s}
   details[open]{border-color:var(--stroke2)}
   details summary{cursor:pointer;font-weight:640;font-size:15px;list-style:none;
-                  padding:18px 52px 18px 20px;position:relative;letter-spacing:-.01em}
+                  padding:17px 50px 17px 19px;position:relative;letter-spacing:-.01em}
   details summary::-webkit-details-marker{display:none}
   details summary::after{content:"";position:absolute;right:20px;top:50%;
         width:9px;height:9px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);
         transform:translateY(-70%) rotate(45deg);transition:transform .22s}
   details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
-  details p{color:var(--sub);font-size:14px;padding:0 20px 19px;line-height:1.65;margin:0}
+  details p{color:var(--sub);font-size:14px;padding:0 19px 18px;line-height:1.65;margin:0}
 
-  /* ---------- footer ---------- */
-  footer{border-top:1px solid var(--stroke);padding:44px 0 56px;text-align:center}
-  footer .flinks{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+  /* footer */
+  footer{border-top:1px solid var(--stroke);padding:40px 0 52px;text-align:center}
+  footer .flinks{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
   footer .flinks a{font-size:13.5px;color:var(--sub);padding:8px 15px;border-radius:10px;
                    border:1px solid var(--stroke);transition:.18s;font-weight:550}
   footer .flinks a:hover{color:var(--text);border-color:var(--accent);background:rgba(59,130,246,.08)}
   footer .copy{color:var(--sub2);font-size:13px}
-  footer .fine{color:#54648c;font-size:12.5px;margin-top:7px}
+  footer .fine{color:#54648c;font-size:12.5px;margin-top:6px}
 </style>
 </head>
 <body>
 
 <nav>
   <div class="wrap">
-    <a class="brand" href="#top"><img src="assets/icon.png" alt="AniPix icon"> AniPix</a>
+    <a class="brand" href="#top"><img src="assets/icon.png" alt="AniPix"> AniPix</a>
     <div class="links">
-      <a href="#screens">Screenshots</a>
+      <a href="#walls">Wallpapers</a>
       <a href="#features">Features</a>
       <a href="#install">Install</a>
       <a href="#faq">FAQ</a>
@@ -199,17 +197,16 @@
   </div>
 </header>
 
-<section class="wrap" id="screens">
+<section class="wrap" id="walls">
   <p class="eyebrow">Gallery</p>
-  <h2>See it in action</h2>
-  <p class="lead">A fast, clean gallery designed to get out of the way of the artwork.</p>
+  <h2>Real wallpapers from the app</h2>
+  <p class="lead">Every image below is an actual wallpaper you can find inside AniPix.</p>
 
-  <div class="coverWrap"><img src="assets/cover.png" alt="AniPix wallpaper preview"></div>
-
-  <div class="phones">
-    <div class="phone"><img src="assets/shot1.png" alt="AniPix home screen"></div>
-    <div class="phone"><img src="assets/shot2.png" alt="AniPix categories"></div>
-    <div class="phone"><img src="assets/shot3.png" alt="AniPix wallpaper viewer"></div>
+  <div class="walls">
+    <div class="wall"><img src="assets/wall1.jpg" alt="Anime wallpaper — Gojo Satoru"><div class="lbl">Anime</div></div>
+    <div class="wall"><img src="assets/wall2.jpg" alt="Anime wallpaper — Sukuna"><div class="lbl">Anime</div></div>
+    <div class="wall"><img src="assets/wall3.jpg" alt="AI art wallpaper — dragon and moon"><div class="lbl">AI Art</div></div>
+    <div class="wall"><img src="assets/wall4.jpg" alt="Divine wallpaper"><div class="lbl">Gods</div></div>
   </div>
 </section>
 
@@ -226,11 +223,8 @@
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div><h3>Instant notifications</h3><p>Get pinged the moment new wallpapers or admin notices drop.</p></div>
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg></div><h3>Profiles &amp; badges</h3><p>Coins, streaks and donor badges — tap anyone in chat to see their profile card.</p></div>
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 20.5 4.2 12.9a4.9 4.9 0 0 1 7-6.9l.8.8.8-.8a4.9 4.9 0 0 1 7 6.9Z"/></svg></div><h3>Favourites &amp; Loved</h3><p>Save wallpapers and discover what the community loves most right now.</p></div>
-    <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="m12 3.5 2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 10l6.1-.9Z"/></svg></div><h3>Ratings</h3><p>Rate wallpapers and help the best ones rise to the top of the feed.</p></div>
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></div><h3>Today's pick</h3><p>A fresh hand-picked wallpaper every day, right on the Today tab.</p></div>
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="10.5" width="16" height="11" rx="2.6"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg></div><h3>Home &amp; lock screen</h3><p>Set on the home screen, the lock screen, or both in a single tap.</p></div>
-    <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5h4a1.8 1.8 0 0 1 0 3.5h-4M9.5 13h4.2a1.8 1.8 0 0 1 0 3.5H9.5"/></svg></div><h3>Watch &amp; earn coins</h3><p>Earn coins with short rewarded ads to unlock live wallpapers.</p></div>
-    <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3v11"/><path d="m8 10.5 4 4 4-4"/><path d="M4 17.5v1.6A1.9 1.9 0 0 0 5.9 21h12.2a1.9 1.9 0 0 0 1.9-1.9v-1.6"/></svg></div><h3>Offline favourites</h3><p>Download wallpapers and keep them saved even with no internet.</p></div>
   </div>
 </section>
 
