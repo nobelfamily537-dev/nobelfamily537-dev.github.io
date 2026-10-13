@@ -1,0 +1,2 @@
+# ads.txt for anipix.me  (Google AdSense)
+google.com, pub-8218995202136403, DIRECT, f08c47fec0942fa0
