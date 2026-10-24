@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AniPix — HD Anime Wallpapers &amp; Live Wallpapers for Android</title>
-<meta name="description" content="AniPix is a free Android app with 2400+ HD anime wallpapers, animated live wallpapers, smart typo-tolerant search and daily updates. Direct APK — no Play Store needed.">
+<title>AniPix — Free HD Anime Wallpapers &amp; Live Wallpapers for Android</title>
+<meta name="description" content="AniPix is a free Android app with 2,400+ HD anime wallpapers, animated live wallpapers, typo-tolerant search and daily drops. Direct APK — no Play Store needed.">
 <meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AniPix">
 <meta property="og:url" content="https://anipix.me/">
-<meta property="og:title" content="AniPix — Anime Wallpapers for Android">
-<meta property="og:description" content="2400+ HD anime wallpapers, live wallpapers, daily updates. Free for Android.">
+<meta property="og:title" content="AniPix — Free Anime Wallpapers for Android">
+<meta property="og:description" content="2,400+ HD anime wallpapers, live wallpapers, daily updates. Free for Android — direct APK, no Play Store needed.">
 <meta property="og:image" content="https://anipix.me/assets/og-preview.png">
 <meta property="og:image:secure_url" content="https://anipix.me/assets/og-preview.png">
 <meta property="og:image:type" content="image/png">
@@ -18,8 +18,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="AniPix - HD anime wallpapers and live wallpapers for Android">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AniPix — Anime Wallpapers for Android">
-<meta name="twitter:description" content="2400+ HD anime wallpapers, live wallpapers, daily updates. Free for Android.">
+<meta name="twitter:title" content="AniPix — Free Anime Wallpapers for Android">
+<meta name="twitter:description" content="2,400+ HD anime wallpapers, live wallpapers, daily updates. Free for Android.">
 <meta name="twitter:image" content="https://anipix.me/assets/og-preview.png">
 <link rel="icon" href="assets/icon-app.png">
 <link rel="apple-touch-icon" href="assets/icon-app.png">
@@ -63,7 +63,7 @@
   nav .links a{transition:color .18s}
   nav .links a:hover{color:var(--text)}
   nav .navcta{display:none}
-  @media(max-width:760px){nav .links{display:none} nav .navcta{display:inline-flex;margin-left:auto}}
+  @media(max-width:820px){nav .links{display:none} nav .navcta{display:inline-flex;margin-left:auto}}
 
   /* buttons */
   .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
@@ -108,7 +108,7 @@
   .eyebrow{text-align:center;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
            color:var(--accent);margin-bottom:10px}
   h2{font-size:clamp(25px,4.3vw,36px);text-align:center;letter-spacing:-.035em;font-weight:780;line-height:1.15}
-  .lead{text-align:center;color:var(--sub);margin:12px auto 0;font-size:15.5px;max-width:540px}
+  .lead{text-align:center;color:var(--sub);margin:12px auto 0;font-size:15.5px;max-width:560px}
 
   /* wallpaper showcase */
   .walls{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
@@ -120,6 +120,22 @@
   .wall .lbl{position:absolute;left:9px;bottom:9px;right:9px;font-size:11px;font-weight:650;
              letter-spacing:.02em;color:#fff;background:rgba(15,23,42,.6);backdrop-filter:blur(8px);
              border:1px solid rgba(255,255,255,.18);border-radius:9px;padding:6px 10px;text-align:center}
+
+  /* long-form prose */
+  .prose{max-width:768px;margin:30px auto 0;color:var(--sub);font-size:15.4px;line-height:1.78}
+  .prose p{margin-bottom:16px}
+  .prose p:last-child{margin-bottom:0}
+  .prose strong{color:var(--text);font-weight:680}
+
+  /* category explainer */
+  .cats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:36px}
+  @media(max-width:900px){.cats-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.cats-grid{grid-template-columns:1fr}}
+  .wcat{background:var(--card);border:1px solid var(--stroke);border-radius:var(--r);
+        padding:19px;box-shadow:var(--shadow);transition:border-color .2s,transform .2s}
+  .wcat:hover{border-color:var(--stroke2);transform:translateY(-2px)}
+  .wcat h3{font-size:15px;font-weight:700;margin-bottom:6px;letter-spacing:-.015em}
+  .wcat p{color:var(--sub);font-size:13.5px;line-height:1.6}
 
   /* features */
   .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:40px}
@@ -135,6 +151,46 @@
   .feat h3{font-size:15.5px;font-weight:670;margin-bottom:6px;letter-spacing:-.015em}
   .feat p{color:var(--sub);font-size:13.8px;line-height:1.6}
 
+  /* latest posts */
+  .latest{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+  @media(max-width:900px){.latest{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.latest{grid-template-columns:1fr}}
+  .lcard{background:var(--card);border:1px solid var(--stroke);border-radius:18px;overflow:hidden;
+         box-shadow:var(--shadow);display:flex;flex-direction:column;
+         transition:transform .22s,box-shadow .22s,border-color .22s}
+  .lcard:hover{transform:translateY(-4px);box-shadow:0 22px 44px -20px rgba(15,23,42,.3);border-color:var(--stroke2)}
+  .lcard .th{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--card2)}
+  .lcard .th img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+  .lcard:hover .th img{transform:scale(1.05)}
+  .lcard .src{position:absolute;top:10px;left:10px;font-size:10.5px;font-weight:800;letter-spacing:.06em;
+              text-transform:uppercase;padding:5px 10px;border-radius:8px;color:#fff;
+              backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+  .src.blog{background:rgba(59,130,246,.92)}
+  .src.space{background:rgba(124,58,237,.92)}
+  .lcard .bd{padding:15px 16px 17px;display:flex;flex-direction:column;gap:7px;flex:1}
+  .lcard h3{font-size:15px;font-weight:700;line-height:1.35;letter-spacing:-.015em}
+  .lcard p{color:var(--sub);font-size:13.3px;line-height:1.55;flex:1}
+  .lcard .dt{color:var(--sub2);font-size:12px;font-weight:550}
+
+  /* more to explore */
+  .explore{max-width:620px;margin:32px auto 0}
+  .explore summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;
+        padding:15px 26px;border-radius:14px;font-weight:680;font-size:15px;background:var(--grad);color:#fff;
+        box-shadow:0 12px 26px -10px rgba(59,130,246,.6);transition:transform .18s,box-shadow .18s}
+  .explore summary::-webkit-details-marker{display:none}
+  .explore summary:hover{transform:translateY(-2px);box-shadow:0 18px 34px -12px rgba(59,130,246,.7)}
+  .explore summary svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:2.2;
+        stroke-linecap:round;stroke-linejoin:round;transition:transform .22s}
+  .explore[open] summary svg{transform:rotate(180deg)}
+  .cats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}
+  @media(max-width:560px){.cats{grid-template-columns:1fr}}
+  .cat{display:block;background:var(--card);border:1px solid var(--stroke);border-radius:18px;padding:22px;
+       box-shadow:var(--shadow);transition:transform .2s,border-color .2s,box-shadow .2s}
+  .cat:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:0 20px 40px -20px rgba(15,23,42,.28)}
+  .cat .k{font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+  .cat h3{font-size:18px;font-weight:780;margin:8px 0 7px;letter-spacing:-.02em}
+  .cat p{color:var(--sub);font-size:13.6px;line-height:1.55;margin:0}
+
   /* steps */
   .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:40px}
   @media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
@@ -149,17 +205,17 @@
 
   /* faq */
   .faq{max-width:760px;margin:38px auto 0}
-  details{background:var(--card);border:1px solid var(--stroke);border-radius:14px;
+  details.faqi{background:var(--card);border:1px solid var(--stroke);border-radius:14px;
           margin-bottom:10px;overflow:hidden;box-shadow:var(--shadow);transition:border-color .2s}
-  details[open]{border-color:var(--stroke2)}
-  details summary{cursor:pointer;font-weight:640;font-size:15px;list-style:none;
+  details.faqi[open]{border-color:var(--stroke2)}
+  details.faqi summary{cursor:pointer;font-weight:640;font-size:15px;list-style:none;
                   padding:17px 50px 17px 19px;position:relative;letter-spacing:-.01em}
-  details summary::-webkit-details-marker{display:none}
-  details summary::after{content:"";position:absolute;right:20px;top:50%;
+  details.faqi summary::-webkit-details-marker{display:none}
+  details.faqi summary::after{content:"";position:absolute;right:20px;top:50%;
         width:9px;height:9px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);
         transform:translateY(-70%) rotate(45deg);transition:transform .22s}
-  details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
-  details p{color:var(--sub);font-size:14px;padding:0 19px 18px;line-height:1.65;margin:0}
+  details.faqi[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+  details.faqi p{color:var(--sub);font-size:14px;padding:0 19px 18px;line-height:1.65;margin:0}
 
   /* footer */
   footer{border-top:1px solid var(--stroke);padding:40px 0 52px;text-align:center;background:#fff}
@@ -172,6 +228,18 @@
 </style>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8218995202136403" crossorigin="anonymous"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KCCJD6YDZV"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-KCCJD6YDZV");</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"AniPix","operatingSystem":"Android 7.0+","applicationCategory":"PersonalizationApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","ratingCount":"120"},"url":"https://anipix.me/","description":"Free Android app with 2,400+ HD anime wallpapers, live wallpapers and typo-tolerant search."}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is AniPix really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. AniPix is completely free and supported by short ads. There is no subscription, no purchase and no Play Store requirement."}},
+{"@type":"Question","name":"Do I have to sign in?","acceptedAnswer":{"@type":"Answer","text":"No. You can browse and set wallpapers without signing in. Sign in with Google only if you want coins, favourites sync, comments or chat."}},
+{"@type":"Question","name":"Where do the wallpapers come from?","acceptedAnswer":{"@type":"Answer","text":"New wallpapers are added daily from public anime art collections, then cropped and optimised for phones. If you own an image and want it removed, contact us and it will be taken down."}},
+{"@type":"Question","name":"Why isn't AniPix on the Play Store?","acceptedAnswer":{"@type":"Answer","text":"AniPix is an independent, teen-built project, so it ships as a direct APK. That also means updates reach you faster than a store review would allow."}},
+{"@type":"Question","name":"Is it safe to install the APK?","acceptedAnswer":{"@type":"Answer","text":"Yes. The APK is built and signed by the AniPix developer and served from the official GitHub release page. Android will ask you to allow installs from this source, which is normal for any app outside the Play Store."}}
+]}
+</script>
 </head>
 <body>
 
@@ -180,8 +248,9 @@
     <a class="brand" href="#top"><img src="assets/icon-app.png" alt="AniPix"> AniPix</a>
     <div class="links">
       <a href="#walls">Wallpapers</a>
+      <a href="#about">About</a>
       <a href="#features">Features</a>
-      <a href="https://github.com/nobelfamily537-dev/AniPix-Walls/releases/latest/download/anipix.apk">Install</a>
+      <a href="#latest">Latest</a>
       <a href="#faq">FAQ</a>
       <a href="https://blog.anipix.me/">Blog</a>
     </div>
@@ -193,7 +262,7 @@
   <div class="pill"><span class="dot"></span> Free &middot; Android 7.0+ &middot; No Play Store needed</div>
   <img class="heroIcon" src="assets/icon-app.png" alt="AniPix app icon">
   <h1>AniPix</h1>
-  <p class="tag">2400+ HD anime wallpapers, animated live wallpapers, daily drops and a search that forgives typos. Built by an anime fan, for anime fans.</p>
+  <p class="tag">2,400+ HD anime wallpapers, animated live wallpapers, daily drops and a search that forgives typos. Built by an anime fan, for anime fans.</p>
 
   <div class="cta">
     <a class="btn primary" href="https://github.com/nobelfamily537-dev/AniPix-Walls/releases/latest/download/anipix.apk">
@@ -202,13 +271,13 @@
     </a>
   </div>
   <p class="meta"><span>~15 MB download</span><span>No sign-in required</span><span>Free forever</span></p>
-  <p class="readmore" style="margin:16px 0 4px;font-size:14.5px;color:#5a6785">
-    Not here to download? <a href="https://blog.anipix.me" style="color:#3b82f6;font-weight:700;text-decoration:none">Read our anime blog</a>
-    &nbsp;or&nbsp;<a href="https://space.anipix.me" style="color:#7c3aed;font-weight:700;text-decoration:none">explore India&rsquo;s space missions</a>.
+  <p style="margin:16px 0 4px;font-size:14.5px;color:#5a6785">
+    Not here to download? <a href="https://blog.anipix.me" style="color:#3b82f6;font-weight:700">Read our anime blog</a>
+    &nbsp;or&nbsp;<a href="https://space.anipix.me" style="color:#7c3aed;font-weight:700">explore India&rsquo;s space missions</a>.
   </p>
 
   <div class="stats">
-    <div class="stat"><b>2400+</b><span>HD wallpapers</span></div>
+    <div class="stat"><b>2,400+</b><span>HD wallpapers</span></div>
     <div class="stat"><b>8</b><span>Categories</span></div>
     <div class="stat"><b>Daily</b><span>New drops</span></div>
     <div class="stat"><b>Live</b><span>Video wallpapers</span></div>
@@ -227,23 +296,33 @@
     <div class="wall"><img src="assets/wall4.jpg" alt="Divine wallpaper"><div class="lbl">Gods</div></div>
   </div>
 </section>
-<section class="wrap" id="network" style="padding:52px 0">
-  <h2 style="font-size:clamp(22px,3.6vw,30px);letter-spacing:-.03em;margin:0 0 8px">More from AniPix</h2>
-  <p style="color:#5a6785;margin:0 0 26px;max-width:640px">AniPix is more than an app. We publish free anime writing every week, and a separate space-science site in English and Hindi.</p>
-  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px">
-    <a href="https://blog.anipix.me" style="display:block;text-decoration:none;background:#fff;border:1px solid #e4e9f2;border-radius:16px;padding:22px;box-shadow:0 1px 2px rgba(15,23,42,.04)">
-      <span style="font-size:11.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#3b82f6">AniPix Blog</span>
-      <h3 style="font-size:19px;margin:9px 0 8px;color:#0f172a;font-weight:800">Anime guides, reviews &amp; news</h3>
-      <p style="color:#5a6785;font-size:14.5px;margin:0">Wallpaper guides, episode-by-episode reviews, watch lists and release dates &mdash; updated every week. Free, no login.</p>
-    </a>
-    <a href="https://space.anipix.me" style="display:block;text-decoration:none;background:#fff;border:1px solid #e4e9f2;border-radius:16px;padding:22px;box-shadow:0 1px 2px rgba(15,23,42,.04)">
-      <span style="font-size:11.5px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#7c3aed">Orbit</span>
-      <h3 style="font-size:19px;margin:9px 0 8px;color:#0f172a;font-weight:800">Space, explained in English &amp; Hindi</h3>
-      <p style="color:#5a6785;font-size:14.5px;margin:0">India&rsquo;s space missions &mdash; Chandrayaan, Gaganyaan, Mangalyaan and more &mdash; explained in plain language, with real ISRO and NASA photos.</p>
-    </a>
+
+<section class="wrap" id="about">
+  <p class="eyebrow">About</p>
+  <h2>What is AniPix?</h2>
+  <div class="prose">
+    <p><strong>AniPix is a free anime wallpaper app for Android</strong>, built by an anime fan who got tired of wallpaper apps that were slow, cluttered with locked content, or wanted a monthly subscription for the good stuff. It started as a small personal project and grew into a library of more than <strong>2,400 hand-picked wallpapers</strong> across eight categories.</p>
+    <p>Every wallpaper in AniPix is cropped to 1080&times;1920 and optimised for phone screens, so nothing looks stretched or blurry once you set it. Alongside static images there are <strong>animated live wallpapers</strong> — real video wallpapers that keep playing behind your apps instead of sitting frozen. New wallpapers are added daily, and a hand-picked &ldquo;Today&rsquo;s pick&rdquo; sits at the top of the app every morning.</p>
+    <p>Search is where AniPix stands out. Instead of forcing you to spell a character&rsquo;s name exactly right, it understands aliases and forgives typos — type <em>jjk</em> and you get Jujutsu Kaisen; type <em>itatchi</em> and Itachi&rsquo;s wallpapers show up anyway. That sounds small until you use an app that does not do it.</p>
+    <p>AniPix is also free in the real sense: <strong>no subscription, no locked premium shelf, no Play Store account required</strong>. It ships as a direct APK, which means updates reach you in minutes rather than after a store review. The app is supported by short ads, and that is the whole business model.</p>
+    <p>There is a community side too. You can sign in with Google to save favourites, leave comments, react to wallpapers and chat with other fans — with usernames, badges, coins and streaks. If you would rather just browse and set wallpapers, you never have to sign in at all.</p>
+    <p>Beyond the app, AniPix publishes free anime writing on the <a href="https://blog.anipix.me" style="color:#3b82f6;font-weight:650">AniPix Blog</a> — episode-by-episode guides, reviews, watch lists and release dates — and runs <a href="https://space.anipix.me" style="color:#7c3aed;font-weight:650">Orbit</a>, a space-science site in English and Hindi covering India&rsquo;s space missions with real ISRO and NASA photography. Both are free and open to everyone.</p>
   </div>
 </section>
 
+<section class="wrap" id="categories">
+  <p class="eyebrow">Library</p>
+  <h2>Eight categories, one app</h2>
+  <p class="lead">Everything is cropped for phones and updated daily. Here is what you will find inside.</p>
+  <div class="cats-grid">
+    <div class="wcat"><h3>Anime</h3><p>Character art, key visuals and iconic scenes from the shows you actually watch — Naruto, Jujutsu Kaisen, One Piece, Demon Slayer and more. The biggest category in the app.</p></div>
+    <div class="wcat"><h3>Games</h3><p>Key art, character wallpapers and screenshots from popular games, cropped and colour-tuned for phone screens.</p></div>
+    <div class="wcat"><h3>Gods &amp; Mythology</h3><p>Devotional and mythological artwork — deities, temples and traditional imagery rendered in high detail.</p></div>
+    <div class="wcat"><h3>Nature</h3><p>Mountains, forests, oceans and skies for a calmer home screen when you want a break from characters.</p></div>
+    <div class="wcat"><h3>Space</h3><p>Galaxies, nebulae, planets and real astrophotography — including imagery connected to India&rsquo;s space missions.</p></div>
+    <div class="wcat"><h3>AI Art</h3><p>Original AI-generated art: surreal landscapes, dragons and fantasy scenes you will not find in any other app.</p></div>
+  </div>
+</section>
 
 <section class="wrap" id="features">
   <p class="eyebrow">Features</p>
@@ -251,9 +330,9 @@
   <p class="lead">Packed with the things you normally pay for — all free.</p>
 
   <div class="grid">
-    <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="m21 15-4.5-4.5L7 21"/></svg></div><h3>2400+ HD wallpapers</h3><p>Anime, games, gods, nature, space and AI art — all cropped to 1080×1920 and phone-ready.</p></div>
+    <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="m21 15-4.5-4.5L7 21"/></svg></div><h3>2,400+ HD wallpapers</h3><p>Anime, games, gods, nature, space and AI art — all cropped to 1080×1920 and phone-ready.</p></div>
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m10 9 5 3-5 3z"/></svg></div><h3>Live wallpapers</h3><p>Real animated video wallpapers that keep playing behind your apps, not just static images.</p></div>
-    <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div><h3>Smart search</h3><p>Aliases plus typo tolerance — “jjk” finds Jujutsu Kaisen, “itatchi” finds Itachi.</p></div>
+    <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div><h3>Smart search</h3><p>Aliases plus typo tolerance — &ldquo;jjk&rdquo; finds Jujutsu Kaisen, &ldquo;itatchi&rdquo; finds Itachi.</p></div>
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-8 8H8l-5 3 1.5-5A8 8 0 1 1 21 12Z"/></svg></div><h3>Comments &amp; likes</h3><p>Talk about your favourite wallpapers with the rest of the community.</p></div>
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 8-3 8h18s-3-1-3-8"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg></div><h3>Instant notifications</h3><p>Get pinged the moment new wallpapers or admin notices drop.</p></div>
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></svg></div><h3>Profiles &amp; badges</h3><p>Coins, streaks and donor badges — tap anyone in chat to see their profile card.</p></div>
@@ -261,6 +340,58 @@
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16" rx="3"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></svg></div><h3>Today's pick</h3><p>A fresh hand-picked wallpaper every day, right on the Today tab.</p></div>
     <div class="feat"><div class="ic"><svg viewBox="0 0 24 24"><rect x="4" y="10.5" width="16" height="11" rx="2.6"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg></div><h3>Home &amp; lock screen</h3><p>Set on the home screen, the lock screen, or both in a single tap.</p></div>
   </div>
+</section>
+
+<section class="wrap" id="latest">
+  <p class="eyebrow">Fresh this week</p>
+  <h2>Latest from AniPix</h2>
+  <p class="lead">New anime writing from the AniPix Blog and new space stories from Orbit.</p>
+
+  <div class="latest">
+    <a class="lcard" href="https://blog.anipix.me/articles/naruto-shippuden-part-13-season-22.html">
+      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-2.webp" alt="Naruto Shippuden Part 13" loading="lazy"></div>
+      <div class="bd"><h3>Naruto Shippuden Part 13: Season 22 (Episodes 480-500)</h3><p>The final season, from Sasuke Shinden to Naruto&rsquo;s wedding — every episode explained.</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://space.anipix.me/articles/search-for-life.html">
+      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/search-for-life-1.webp" alt="The Search for Life in Space" loading="lazy"></div>
+      <div class="bd"><h3>Are We Alone? The Search for Life in Space</h3><p>Water, organic molecules and thousands of planets — so where is everybody?</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://blog.anipix.me/articles/naruto-shippuden-part-12-seasons-20-21.html">
+      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-1.webp" alt="Naruto Shippuden Part 12" loading="lazy"></div>
+      <div class="bd"><h3>Naruto Shippuden Part 12: Seasons 20-21 (Episodes 414-479)</h3><p>The Infinite Tsukuyomi, Kaguya, and the final Naruto vs Sasuke battle.</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://space.anipix.me/articles/moon-base.html">
+      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/moon-base-1.webp" alt="Moon Base" loading="lazy"></div>
+      <div class="bd"><h3>Moon Base: How Humans Will Live on the Moon</h3><p>NASA and its partners plan the first Moon base — how it will be built and where.</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://blog.anipix.me/articles/naruto-shippuden-part-11-seasons-18-19.html">
+      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-3.webp" alt="Naruto Shippuden Part 11" loading="lazy"></div>
+      <div class="bd"><h3>Naruto Shippuden Part 11: Seasons 18-19 (Episodes 373-413)</h3><p>Team 7 reunited, and the fight against Obito and Madara.</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://space.anipix.me/articles/big-bang.html">
+      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/big-bang-1.webp" alt="The Big Bang" loading="lazy"></div>
+      <div class="bd"><h3>The Big Bang: How the Universe Began</h3><p>What happened in the first moments of the universe — and how we know.</p><span class="dt">20 October 2026</span></div>
+    </a>
+  </div>
+
+  <details class="explore">
+    <summary>
+      More to Explore
+      <svg viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
+    </summary>
+    <div class="cats">
+      <a class="cat" href="https://space.anipix.me">
+        <span class="k" style="color:#7c3aed">Orbit</span>
+        <h3>Space</h3>
+        <p>India&rsquo;s space missions and the science of the universe, explained in English and Hindi with real ISRO and NASA photos.</p>
+      </a>
+      <a class="cat" href="https://blog.anipix.me">
+        <span class="k" style="color:#3b82f6">AniPix Blog</span>
+        <h3>Blog</h3>
+        <p>Episode-by-episode anime guides, reviews, watch lists and release dates — updated every week. Free, no login.</p>
+      </a>
+    </div>
+  </details>
 </section>
 
 <section class="wrap" id="install">
@@ -276,15 +407,38 @@
   </div>
 </section>
 
+<section class="wrap" id="whatsnew">
+  <div style="background:linear-gradient(135deg,#eff4ff,#f6f0ff);border:1px solid #dfe6f5;border-radius:20px;padding:24px 26px">
+    <div style="font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#3b82f6">New in v210</div>
+    <h2 style="font-size:clamp(20px,3.4vw,27px);margin:8px 0 12px;letter-spacing:-.03em">A whole new chat inside AniPix</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;color:#41506b;font-size:14.5px;line-height:1.6">
+      <div>&#64; <b>Usernames</b> — claim your own name, nobody else can take it</div>
+      <div>&#128172; <b>Reply &amp; quote</b> — swipe a message to the right</div>
+      <div>&#128077; <b>Reactions</b> — long-press any message</div>
+      <div>&#127912; <b>New chat background</b> — Telegram-style doodles</div>
+      <div>&#128994; <b>Online &amp; last seen</b> — tap anyone&rsquo;s profile</div>
+      <div>&#128204; <b>Pin, edit, typing</b> — and long messages show in full</div>
+    </div>
+    <div style="margin-top:16px">
+      <a class="btn primary sm" href="https://github.com/nobelfamily537-dev/AniPix-Walls/releases/latest/download/anipix.apk">Download v210</a>
+    </div>
+  </div>
+</section>
+
 <section class="wrap" id="faq">
   <p class="eyebrow">FAQ</p>
   <h2>Questions</h2>
   <div class="faq">
-    <details><summary>Is AniPix really free?</summary><p>Yes. AniPix is completely free and supported by short ads. There is no subscription, no purchase and no Play Store requirement.</p></details>
-    <details><summary>Do I have to sign in?</summary><p>No. You can browse and set wallpapers without signing in. Sign in with Google only if you want coins, favourites sync, comments or chat.</p></details>
-    <details><summary>Where do the wallpapers come from?</summary><p>New wallpapers are added daily from public anime art collections, then cropped and optimised for phones. If you own an image and want it removed, just contact us and it will be taken down.</p></details>
-    <details><summary>Why isn't it on the Play Store?</summary><p>AniPix is an independent, teen-built project, so it ships as a direct APK. That also means updates reach you faster than a store review would allow.</p></details>
-    <details><summary>Will it work on my phone?</summary><p>AniPix needs Android 7.0 or newer. Live wallpapers work on most modern devices; everything else runs everywhere.</p></details>
+    <details class="faqi"><summary>Is AniPix really free?</summary><p>Yes. AniPix is completely free and supported by short ads. There is no subscription, no purchase and no Play Store requirement.</p></details>
+    <details class="faqi"><summary>Do I have to sign in?</summary><p>No. You can browse and set wallpapers without signing in. Sign in with Google only if you want coins, favourites sync, comments or chat.</p></details>
+    <details class="faqi"><summary>Where do the wallpapers come from?</summary><p>New wallpapers are added daily from public anime art collections, then cropped and optimised for phones. If you own an image and want it removed, just contact us and it will be taken down.</p></details>
+    <details class="faqi"><summary>Why isn&rsquo;t it on the Play Store?</summary><p>AniPix is an independent, teen-built project, so it ships as a direct APK. That also means updates reach you faster than a store review would allow.</p></details>
+    <details class="faqi"><summary>Is it safe to install the APK?</summary><p>Yes. The APK is built and signed by the AniPix developer and served from the official GitHub release page. Android will ask you to allow installs from this source — that is normal for any app installed outside the Play Store.</p></details>
+    <details class="faqi"><summary>How do I update AniPix?</summary><p>Open the app and you will be told when a new version is out. Download the new APK and install it over the old one — your favourites and settings stay.</p></details>
+    <details class="faqi"><summary>Will it work on my phone?</summary><p>AniPix needs Android 7.0 or newer. Live wallpapers work on most modern devices; everything else runs everywhere.</p></details>
+    <details class="faqi"><summary>Does it use a lot of battery or data?</summary><p>Static wallpapers use essentially nothing. Live wallpapers use more battery, as any animated wallpaper does, so use them if your phone handles it well. Wallpapers are compressed, so browsing uses very little data.</p></details>
+    <details class="faqi"><summary>Can I request a wallpaper?</summary><p>Yes — ask in the in-app chat or message us on Telegram, and we will try to add it. Requests for popular characters usually show up within a few days.</p></details>
+    <details class="faqi"><summary>Do you have an iPhone version?</summary><p>Not yet. AniPix is Android-only for now. The wallpapers themselves are free to browse on this site and on our blog.</p></details>
   </div>
 </section>
 
@@ -296,29 +450,12 @@
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms</a>
       <a href="https://t.me/Lovelyanime_admin">Telegram</a>
-      <a href="https://anipix.itch.io/anipix">itch.io</a>
       <a href="https://blog.anipix.me/">Blog</a>
+      <a href="https://space.anipix.me/">Orbit</a>
     </div>
     <p class="copy">&copy; <span id="y"></span> AniPix &middot; Made by an anime fan, for anime fans.</p>
     <p class="fine">All artwork belongs to its original creators.</p>
   </div>
-<section class="whatsnew" id="whatsnew" style="padding:34px 0"><div class="wrap">
-  <div style="background:linear-gradient(135deg,#eff4ff,#f6f0ff);border:1px solid #dfe6f5;border-radius:20px;padding:22px 24px">
-    <div style="font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#3b82f6">New in v210</div>
-    <h2 style="font-size:clamp(20px,3.4vw,27px);margin:8px 0 12px;letter-spacing:-.03em">A whole new chat inside AniPix</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px;color:#41506b;font-size:14.5px;line-height:1.6">
-      <div>&#64; <b>Usernames</b> - claim your own name, nobody else can take it</div>
-      <div>&#128172; <b>Reply &amp; quote</b> - swipe a message to the right</div>
-      <div>&#128077; <b>Reactions</b> - long-press any message</div>
-      <div>&#127912; <b>New chat background</b> - Telegram-style doodles</div>
-      <div>&#128994; <b>Online &amp; last seen</b> - tap anyone's profile</div>
-      <div>&#128204; <b>Pin, edit, typing</b> - and long messages show in full</div>
-    </div>
-    <div style="margin-top:16px">
-      <a class="btn primary sm" href="https://github.com/nobelfamily537-dev/AniPix-Walls/releases/latest/download/anipix.apk">Download v210</a>
-    </div>
-  </div>
-</div></section>
 </footer>
 
 <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
