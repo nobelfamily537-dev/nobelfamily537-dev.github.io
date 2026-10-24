@@ -172,6 +172,13 @@
   .lcard p{color:var(--sub);font-size:13.3px;line-height:1.55;flex:1}
   .lcard .dt{color:var(--sub2);font-size:12px;font-weight:550}
 
+  /* latest group head */
+  .grouphead{display:flex;align-items:center;gap:9px;margin:40px 0 0;font-size:12.5px;font-weight:800;
+       letter-spacing:.1em;text-transform:uppercase;color:var(--sub)}
+  .grouphead .gdot{width:9px;height:9px;border-radius:50%}
+  .gdot.blog{background:#3b82f6;box-shadow:0 0 0 4px rgba(59,130,246,.15)}
+  .gdot.space{background:#7c3aed;box-shadow:0 0 0 4px rgba(124,58,237,.15)}
+
   /* more to explore */
   .explore{max-width:620px;margin:32px auto 0}
   .explore summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;
@@ -345,32 +352,61 @@
 <section class="wrap" id="latest">
   <p class="eyebrow">Fresh this week</p>
   <h2>Latest from AniPix</h2>
-  <p class="lead">New anime writing from the AniPix Blog and new space stories from Orbit.</p>
+  <p class="lead">The six newest posts from the AniPix Blog, and the six newest from Orbit.</p>
 
+  <div class="grouphead"><span class="gdot blog"></span> From the AniPix Blog</div>
   <div class="latest">
     <a class="lcard" href="https://blog.anipix.me/articles/naruto-shippuden-part-13-season-22.html">
-      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-2.webp" alt="Naruto Shippuden Part 13" loading="lazy"></div>
-      <div class="bd"><h3>Naruto Shippuden Part 13: Season 22 (Episodes 480-500)</h3><p>The final season, from Sasuke Shinden to Naruto&rsquo;s wedding — every episode explained.</p><span class="dt">20 October 2026</span></div>
-    </a>
-    <a class="lcard" href="https://space.anipix.me/articles/search-for-life.html">
-      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/search-for-life-1.webp" alt="The Search for Life in Space" loading="lazy"></div>
-      <div class="bd"><h3>Are We Alone? The Search for Life in Space</h3><p>Water, organic molecules and thousands of planets — so where is everybody?</p><span class="dt">20 October 2026</span></div>
+      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-2.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>Naruto Shippuden Part 13: Season 22 (Episodes 480&ndash;500)</h3><p>The final season &mdash; from Sasuke Shinden to Naruto&rsquo;s wedding, every episode explained.</p><span class="dt">20 October 2026</span></div>
     </a>
     <a class="lcard" href="https://blog.anipix.me/articles/naruto-shippuden-part-12-seasons-20-21.html">
-      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-1.webp" alt="Naruto Shippuden Part 12" loading="lazy"></div>
-      <div class="bd"><h3>Naruto Shippuden Part 12: Seasons 20-21 (Episodes 414-479)</h3><p>The Infinite Tsukuyomi, Kaguya, and the final Naruto vs Sasuke battle.</p><span class="dt">20 October 2026</span></div>
-    </a>
-    <a class="lcard" href="https://space.anipix.me/articles/moon-base.html">
-      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/moon-base-1.webp" alt="Moon Base" loading="lazy"></div>
-      <div class="bd"><h3>Moon Base: How Humans Will Live on the Moon</h3><p>NASA and its partners plan the first Moon base — how it will be built and where.</p><span class="dt">20 October 2026</span></div>
+      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-1.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>Naruto Shippuden Part 12: Seasons 20&ndash;21 (Episodes 414&ndash;479)</h3><p>The Infinite Tsukuyomi, Kaguya, and the final Naruto vs Sasuke battle.</p><span class="dt">20 October 2026</span></div>
     </a>
     <a class="lcard" href="https://blog.anipix.me/articles/naruto-shippuden-part-11-seasons-18-19.html">
-      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-3.webp" alt="Naruto Shippuden Part 11" loading="lazy"></div>
-      <div class="bd"><h3>Naruto Shippuden Part 11: Seasons 18-19 (Episodes 373-413)</h3><p>Team 7 reunited, and the fight against Obito and Madara.</p><span class="dt">20 October 2026</span></div>
+      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-3.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>Naruto Shippuden Part 11: Seasons 18&ndash;19 (Episodes 373&ndash;413)</h3><p>Team 7 reunited, and the fight against Obito and Madara.</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://blog.anipix.me/articles/naruto-shippuden-part-10-seasons-16-17.html">
+      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-1.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>Naruto Shippuden Part 10: Seasons 16&ndash;17 (Episodes 349&ndash;372)</h3><p>The Kakashi ANBU arc and the return of Team 7.</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://blog.anipix.me/articles/naruto-shippuden-part-9-seasons-14-15.html">
+      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-2.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>Naruto Shippuden Part 9: Seasons 14&ndash;15 (Episodes 296&ndash;348)</h3><p>Madara Uchiha arrives, the Five Kage fight, and the truth about Itachi.</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://blog.anipix.me/articles/naruto-shippuden-part-8-seasons-12-13.html">
+      <div class="th"><span class="src blog">Blog</span><img src="https://blog.anipix.me/assets/img/naruto-series-3.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>Naruto Shippuden Part 8: Seasons 12&ndash;13 (Episodes 243&ndash;295)</h3><p>The Fourth Great Ninja War begins, and the Seven Ninja Swordsmen.</p><span class="dt">20 October 2026</span></div>
+    </a>
+  </div>
+
+  <div class="grouphead"><span class="gdot space"></span> From Orbit &mdash; Space</div>
+  <div class="latest">
+    <a class="lcard" href="https://space.anipix.me/articles/search-for-life.html">
+      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/search-for-life-1.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>Are We Alone? The Search for Life in Space</h3><p>Water, organic molecules and thousands of planets &mdash; so where is everybody?</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://space.anipix.me/articles/moon-base.html">
+      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/moon-base-1.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>Moon Base: How Humans Will Live on the Moon</h3><p>NASA and its partners plan the first Moon base &mdash; and caves may be the key.</p><span class="dt">20 October 2026</span></div>
     </a>
     <a class="lcard" href="https://space.anipix.me/articles/big-bang.html">
-      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/big-bang-1.webp" alt="The Big Bang" loading="lazy"></div>
-      <div class="bd"><h3>The Big Bang: How the Universe Began</h3><p>What happened in the first moments of the universe — and how we know.</p><span class="dt">20 October 2026</span></div>
+      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/big-bang-1.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>The Big Bang: How the Universe Began</h3><p>What happened in the first moments &mdash; and how we know it really happened.</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://space.anipix.me/articles/black-holes.html">
+      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/black-holes-1.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>Black Holes: What They Are and Why Nothing Escapes</h3><p>A place where gravity wins completely &mdash; and how we photographed one.</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://space.anipix.me/articles/james-webb-telescope.html">
+      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/james-webb-telescope-1.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>James Webb Telescope: The Most Powerful Eye on the Universe</h3><p>Looking back to the first galaxies &mdash; and the images that stunned the world.</p><span class="dt">20 October 2026</span></div>
+    </a>
+    <a class="lcard" href="https://space.anipix.me/articles/spacex-starship.html">
+      <div class="th"><span class="src space">Orbit</span><img src="https://space.anipix.me/assets/img/spacex-starship-1.webp" alt="" loading="lazy"></div>
+      <div class="bd"><h3>Starship: The Biggest Rocket Ever Built</h3><p>The tallest, most powerful rocket ever flown &mdash; and why it matters.</p><span class="dt">20 October 2026</span></div>
     </a>
   </div>
 
@@ -388,7 +424,7 @@
       <a class="cat" href="https://blog.anipix.me">
         <span class="k" style="color:#3b82f6">AniPix Blog</span>
         <h3>Blog</h3>
-        <p>Episode-by-episode anime guides, reviews, watch lists and release dates — updated every week. Free, no login.</p>
+        <p>Episode-by-episode anime guides, reviews, watch lists and release dates &mdash; updated every week. Free, no login.</p>
       </a>
     </div>
   </details>
