@@ -3,6 +3,30 @@
  "blog": [
   {
    "src": "blog",
+   "url": "https://blog.anipix.me/articles/re-zero-seasons-1-3-complete-story.html",
+   "img": "https://blog.anipix.me/assets/img/rzero13-4.webp",
+   "title": "Re:Zero Seasons 1-3: The Complete Story So Far (Every Arc Explained)",
+   "excerpt": "Everything that happens in Re:Zero before Season 4 - the Return by Death rule, the Roswaal mansion, the Sanctuary, and the battle for Priestella - explained arc by arc.",
+   "date": "30 October 2026"
+  },
+  {
+   "src": "blog",
+   "url": "https://blog.anipix.me/articles/re-zero-season-4-complete-guide.html",
+   "img": "https://blog.anipix.me/assets/img/rzero4-1.webp",
+   "title": "Re:Zero Season 4: The Complete Guide to the Loss and Recapture Arcs",
+   "excerpt": "Re:Zero Season 4 ran for 19 episodes in 2026 and adapted Arc 6. Here is what happens in the Loss Arc and the Recapture Arc, who is behind Subaru's amnesia, and how it ends.",
+   "date": "30 October 2026"
+  },
+  {
+   "src": "blog",
+   "url": "https://blog.anipix.me/articles/cyberpunk-edgerunners-2-review.html",
+   "img": "https://blog.anipix.me/assets/img/edgerunners2-1.webp",
+   "title": "Cyberpunk: Edgerunners 2 Review: Night City Burns Again",
+   "excerpt": "Cyberpunk: Edgerunners 2 is out now on Netflix - all 10 episodes. A standalone story with a new crew, a new director and The Cure on the opening credits. Here is everything you need to know.",
+   "date": "30 October 2026"
+  },
+  {
+   "src": "blog",
    "url": "https://blog.anipix.me/articles/blue-box-season-1-and-2-overview.html",
    "img": "https://blog.anipix.me/assets/img/bluebox-s1-trio.webp",
    "title": "Blue Box Season 1 & 2: A Short Overview (What to Know Before You Watch)",
@@ -24,33 +48,18 @@
    "title": "Blue Box Season 1: Complete Episode Guide (All 25 Episodes Explained)",
    "excerpt": "Every episode of Blue Box Season 1 explained - all 25 episodes of Ao no Hako, from the first morning at the gym to the finale, plus characters, staff, music and where to watch.",
    "date": "25 October 2026"
-  },
-  {
-   "src": "blog",
-   "url": "https://blog.anipix.me/articles/naruto-shippuden-part-13-season-22.html",
-   "img": "https://blog.anipix.me/assets/img/naruto-series-2.webp",
-   "title": "Naruto Shippuden Part 13: Season 22 (Episodes 480-500) - Every Episode Explained",
-   "excerpt": "Episode-by-episode guide to Naruto Shippuden Season 22 - the final season, from Sasuke Shinden to Naruto's wedding, all 21 episodes with a summary of each.",
-   "date": "20 October 2026"
-  },
-  {
-   "src": "blog",
-   "url": "https://blog.anipix.me/articles/naruto-shippuden-part-12-seasons-20-21.html",
-   "img": "https://blog.anipix.me/assets/img/naruto-series-1.webp",
-   "title": "Naruto Shippuden Part 12: Seasons 20-21 (Episodes 414-479) - Every Episode Explained",
-   "excerpt": "Episode-by-episode guide to Naruto Shippuden Seasons 20 and 21 - the Infinite Tsukuyomi, Kaguya, and the final Naruto vs Sasuke battle, all 66 episodes with a summary of each.",
-   "date": "20 October 2026"
-  },
-  {
-   "src": "blog",
-   "url": "https://blog.anipix.me/articles/naruto-shippuden-part-11-seasons-18-19.html",
-   "img": "https://blog.anipix.me/assets/img/naruto-series-3.webp",
-   "title": "Naruto Shippuden Part 11: Seasons 18-19 (Episodes 373-413) - Every Episode Explained",
-   "excerpt": "Episode-by-episode guide to Naruto Shippuden Seasons 18 and 19 - Team 7 reunited, the fight against Obito and Madara, and the Chunin Exams arc, all 41 episodes with a summary of each.",
-   "date": "20 October 2026"
   }
  ],
  "space": [
+  {
+   "src": "space",
+   "url": "https://space.anipix.me/articles/hera-dimorphos.html",
+   "img": "https://space.anipix.me/assets/img/hera-dimorphos-1.webp",
+   "title": "Hera Arrives at Dimorphos: Inspecting the Asteroid We Hit on Purpose",
+   "excerpt": "ESA's Hera reaches the Didymos system on 4 November 2026 to investigate what NASA's DART impact actually did. First images on 25 November, two CubeSats, and a hunt for a crater that may not exist.",
+   "kicker": "Missions · Planetary Defence",
+   "date": "30 October 2026"
+  },
   {
    "src": "space",
    "url": "https://space.anipix.me/articles/solar-eclipse-2027.html",
@@ -58,7 +67,7 @@
    "title": "The 2027 Total Solar Eclipse: The Eclipse of the Century",
    "excerpt": "On 2 August 2027 the Moon's shadow crosses Spain, North Africa and the Middle East for up to 6 minutes 23 seconds — the longest totality over land in a century. What you'll see, and what India gets.",
    "kicker": "Sun · Eclipses",
-   "date": "28 October 2026"
+   "date": "30 October 2026"
   },
   {
    "src": "space",
@@ -67,7 +76,7 @@
    "title": "MMX: Japan's Mission to Bring Back a Piece of Mars' Moon",
    "excerpt": "Japan's MMX spacecraft launched in October 2026 on a five-year round trip to Phobos. It will be the first mission ever to bring material back from the Martian system.",
    "kicker": "Mars · Phobos",
-   "date": "28 October 2026"
+   "date": "30 October 2026"
   },
   {
    "src": "space",
@@ -76,7 +85,7 @@
    "title": "Artemis III: How NASA Plans to Put Humans Back on the Moon",
    "excerpt": "NASA has laid out exactly how it will return astronauts to the Moon in 2028 — new lander routes, a 2027 test flight, and the refuelling question nobody has answered yet.",
    "kicker": "Moon · Artemis",
-   "date": "28 October 2026"
+   "date": "30 October 2026"
   },
   {
    "src": "space",
@@ -85,7 +94,7 @@
    "title": "Are We Alone? The Search for Life in Space",
    "excerpt": "Scientists have found water, organic molecules and thousands of planets. So where is everybody? How we search for life beyond Earth.",
    "kicker": "Space · Life in the universe",
-   "date": "28 October 2026"
+   "date": "30 October 2026"
   },
   {
    "src": "space",
@@ -94,16 +103,7 @@
    "title": "Moon Base: How Humans Will Live on the Moon",
    "excerpt": "NASA and its partners plan to build the first Moon base. How it will be built, where it will sit, and why caves may be the key.",
    "kicker": "NASA · Moon",
-   "date": "28 October 2026"
-  },
-  {
-   "src": "space",
-   "url": "https://space.anipix.me/articles/big-bang.html",
-   "img": "https://space.anipix.me/assets/img/big-bang-1.webp",
-   "title": "The Big Bang: How the Universe Began",
-   "excerpt": "The Big Bang is how the universe began. What happened in the first moments, and how we know it really happened.",
-   "kicker": "Space · Cosmology",
-   "date": "28 October 2026"
+   "date": "30 October 2026"
   }
  ]
 }
