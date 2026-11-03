@@ -53,6 +53,15 @@
  "space": [
   {
    "src": "space",
+   "url": "https://space.anipix.me/articles/europa-clipper.html",
+   "img": "https://space.anipix.me/assets/img/europa-clipper-1.webp",
+   "title": "Europa Clipper: Hunting for Life Under Europa's Ice",
+   "excerpt": "NASA's Europa Clipper is on its way to Jupiter's icy moon to find out whether its hidden ocean could support life. Here is how the mission works.",
+   "kicker": "NASA · Jupiter",
+   "date": "3 November 2026"
+  },
+  {
+   "src": "space",
    "url": "https://space.anipix.me/articles/hera-dimorphos.html",
    "img": "https://space.anipix.me/assets/img/hera-dimorphos-1.webp",
    "title": "Hera Arrives at Dimorphos: Inspecting the Asteroid We Hit on Purpose",
@@ -94,15 +103,6 @@
    "title": "Are We Alone? The Search for Life in Space",
    "excerpt": "Scientists have found water, organic molecules and thousands of planets. So where is everybody? How we search for life beyond Earth.",
    "kicker": "Space · Life in the universe",
-   "date": "30 October 2026"
-  },
-  {
-   "src": "space",
-   "url": "https://space.anipix.me/articles/moon-base.html",
-   "img": "https://space.anipix.me/assets/img/moon-base-1.webp",
-   "title": "Moon Base: How Humans Will Live on the Moon",
-   "excerpt": "NASA and its partners plan to build the first Moon base. How it will be built, where it will sit, and why caves may be the key.",
-   "kicker": "NASA · Moon",
    "date": "30 October 2026"
   }
  ]
