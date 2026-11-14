@@ -3,6 +3,14 @@
  "blog": [
   {
    "src": "blog",
+   "url": "https://blog.anipix.me/articles/steel-ball-run-fall-2026-week-6-rankings.html",
+   "img": "https://blog.anipix.me/assets/img/sbr-hero.webp",
+   "title": "Steel Ball Run Is Topping Every Chart: Fall 2026 Week 6 Rankings Explained",
+   "excerpt": "Steel Ball Run has won two weeks running in the Fall 2026 community rankings. The full Week 6 top 10, the three shows splitting the season, and why the three anime charts disagree.",
+   "date": "14 November 2026"
+  },
+  {
+   "src": "blog",
    "url": "https://blog.anipix.me/articles/detective-is-already-dead-season-2-guide.html",
    "img": "https://blog.anipix.me/assets/img/detective-s2-key.webp",
    "title": "The Detective Is Already Dead Season 2: Episode Guide, Schedule and Review (2026)",
@@ -40,14 +48,6 @@
    "title": "Cyberpunk: Edgerunners 2 Review: Night City Burns Again",
    "excerpt": "Cyberpunk: Edgerunners 2 is out now on Netflix - all 10 episodes. A standalone story with a new crew, a new director and The Cure on the opening credits. Here is everything you need to know.",
    "date": "30 October 2026"
-  },
-  {
-   "src": "blog",
-   "url": "https://blog.anipix.me/articles/blue-box-season-2-complete-episode-guide.html",
-   "img": "https://blog.anipix.me/assets/img/bluebox-s2-banner.webp",
-   "title": "Blue Box Season 2: Complete Episode Guide (Airing Now, 2026)",
-   "excerpt": "Everything about Blue Box Season 2 - the new studio, the new characters, the Winter Cup arc and an episode-by-episode guide to the season as it airs, updated through episode 4.",
-   "date": "25 October 2026"
   }
  ],
  "space": [
