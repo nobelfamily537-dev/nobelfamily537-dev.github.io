@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dark Wallpapers on OLED: How Much Battery They Actually Save | AniPix</title>
+<meta name="description" content="Why black pixels cost nothing on OLED, how much a dark wallpaper really saves, which images count as dark, and the burn-in argument for using one.">
+<link rel="canonical" href="https://anipix.me/amoled-dark-wallpapers.html">
+<meta property="og:title" content="Dark Wallpapers on OLED: How Much Battery They Actually Save">
+<meta property="og:description" content="Why black pixels cost nothing on OLED, how much a dark wallpaper really saves, which images count as dark, and the burn-in argument for using one.">
+<meta property="og:site_name" content="AniPix">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://anipix.me/amoled-dark-wallpapers.html">
+<meta property="og:image" content="https://anipix.me/assets/og-preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/icon-app.png">
+<style>
+  :root{
+    --bg:#f6f8fc; --card:#ffffff; --card2:#f2f5fb;
+    --stroke:#e4e9f2; --stroke2:#d3dbeb;
+    --text:#0f172a; --sub:#5a6785; --sub2:#8a94ab;
+    --accent:#3b82f6; --accent2:#8b5cf6;
+    --grad:linear-gradient(135deg,#3b82f6,#8b5cf6);
+    --shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px -12px rgba(15,23,42,.12);
+    --shadow-lg:0 24px 50px -22px rgba(15,23,42,.28);
+    --r:16px; --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+    line-height:1.65; letter-spacing:-.011em; -webkit-font-smoothing:antialiased; overflow-x:hidden;
+  }
+  body::before{
+    content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
+    background:
+      radial-gradient(760px 420px at 10% -10%,rgba(59,130,246,.10),transparent 62%),
+      radial-gradient(700px 420px at 94% -6%,rgba(139,92,246,.10),transparent 62%),
+      radial-gradient(900px 520px at 50% 104%,rgba(59,130,246,.05),transparent 66%);
+  }
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px;width:100%}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.82);
+      backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+      border-bottom:1px solid var(--stroke)}
+  nav .wrap{display:flex;align-items:center;gap:11px;height:62px}
+  nav .brand{display:flex;align-items:center;gap:10px;font-weight:750;font-size:16px;letter-spacing:-.02em}
+  nav .brand img{width:30px;height:30px;border-radius:9px;box-shadow:0 6px 16px -6px rgba(59,130,246,.7)}
+  nav .links{margin-left:auto;display:flex;gap:24px;font-size:14px;color:var(--sub);font-weight:500}
+  nav .links a{transition:color .18s}
+  nav .links a:hover{color:var(--text)}
+  nav .navcta{display:none}
+  @media(max-width:760px){nav .links{display:none} nav .navcta{display:inline-flex;margin-left:auto}}
+
+  /* buttons */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;
+       padding:14px 25px;border-radius:13px;font-weight:650;font-size:15px;
+       border:1px solid transparent;transition:transform .18s,box-shadow .18s,border-color .18s,background .18s;
+       white-space:nowrap;cursor:pointer}
+  .btn svg{width:18px;height:18px;flex:none}
+  .btn.primary{background:var(--grad);color:#fff;box-shadow:0 10px 24px -8px rgba(59,130,246,.65)}
+  .btn.primary:hover{transform:translateY(-2px);box-shadow:0 16px 32px -10px rgba(59,130,246,.75)}
+  .btn.ghost{border-color:var(--stroke2);background:#fff;color:var(--text);box-shadow:var(--shadow)}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .btn.sm{padding:10px 17px;font-size:14px;border-radius:11px}
+
+  /* hero */
+  header{padding:60px 0 20px;text-align:center}
+  .pill{display:inline-flex;align-items:center;gap:8px;padding:7px 15px;border-radius:999px;
+        border:1px solid var(--stroke2);background:#fff;box-shadow:var(--shadow);
+        font-size:12.5px;font-weight:600;color:var(--sub)}
+  .pill .dot{width:7px;height:7px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 3px rgba(34,197,94,.16)}
+  .heroIcon{width:96px;height:96px;border-radius:23px;margin:24px auto 0;
+            box-shadow:0 20px 40px -14px rgba(59,130,246,.6),0 0 0 1px rgba(15,23,42,.04)}
+  h1{font-size:clamp(40px,7.5vw,68px);line-height:1;margin:20px 0 14px;letter-spacing:-.045em;font-weight:800;
+     background:linear-gradient(115deg,#0f172a 10%,#2b4b8f 55%,#5b3fb0 95%);
+     -webkit-background-clip:text;background-clip:text;color:transparent}
+  .tag{color:var(--sub);font-size:clamp(15.5px,2.3vw,18.5px);max-width:620px;margin:0 auto;line-height:1.6}
+  .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+  .meta{color:var(--sub2);font-size:13px;margin-top:15px;display:flex;gap:9px;justify-content:center;flex-wrap:wrap}
+  .meta span{display:inline-flex;align-items:center;gap:9px}
+  .meta span+span::before{content:"";width:3px;height:3px;border-radius:50%;background:var(--stroke2)}
+
+  /* stats */
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:44px 0 0}
+  @media(max-width:720px){.stats{grid-template-columns:repeat(2,1fr)}}
+  .stat{background:var(--card);border:1px solid var(--stroke);border-radius:var(--r);
+        padding:19px 12px;box-shadow:var(--shadow)}
+  .stat b{display:block;font-size:25px;font-weight:800;letter-spacing:-.03em;
+          background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat span{color:var(--sub);font-size:12.5px;font-weight:500}
+
+  /* sections */
+  section{padding:62px 0}
+  .eyebrow{text-align:center;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+           color:var(--accent);margin-bottom:10px}
+  h2{font-size:clamp(25px,4.3vw,36px);text-align:center;letter-spacing:-.035em;font-weight:780;line-height:1.15}
+  .lead{text-align:center;color:var(--sub);margin:12px auto 0;font-size:15.5px;max-width:540px}
+
+  /* wallpaper showcase */
+  .walls{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:38px}
+  @media(max-width:860px){.walls{grid-template-columns:repeat(2,1fr);gap:14px}}
+  .wall{position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--stroke);
+        background:#fff;box-shadow:var(--shadow-lg);transition:transform .25s,box-shadow .25s}
+  .wall:hover{transform:translateY(-5px);box-shadow:0 30px 60px -24px rgba(15,23,42,.4)}
+  .wall img{width:100%;aspect-ratio:9/16;object-fit:cover}
+  .wall .lbl{position:absolute;left:9px;bottom:9px;right:9px;font-size:11px;font-weight:650;
+             letter-spacing:.02em;color:#fff;background:rgba(15,23,42,.6);backdrop-filter:blur(8px);
+             border:1px solid rgba(255,255,255,.18);border-radius:9px;padding:6px 10px;text-align:center}
+
+  /* features */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:40px}
+  @media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .feat{background:var(--card);border:1px solid var(--stroke);border-radius:var(--r);
+        padding:20px;box-shadow:var(--shadow);transition:border-color .2s,transform .2s,box-shadow .2s}
+  .feat:hover{border-color:var(--stroke2);transform:translateY(-3px);box-shadow:0 18px 40px -20px rgba(15,23,42,.28)}
+  .feat .ic{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;
+            background:linear-gradient(135deg,#eaf1ff,#f1ecff);
+            border:1px solid rgba(59,130,246,.18);margin-bottom:14px}
+  .feat .ic svg{width:19px;height:19px;stroke:#3b82f6;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+  .feat h3{font-size:15.5px;font-weight:670;margin-bottom:6px;letter-spacing:-.015em}
+  .feat p{color:var(--sub);font-size:13.8px;line-height:1.6}
+
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:40px}
+  @media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.steps{grid-template-columns:1fr}}
+  .step{background:var(--card);border:1px solid var(--stroke);border-radius:var(--r);
+        padding:20px;box-shadow:var(--shadow)}
+  .step .n{width:31px;height:31px;border-radius:10px;display:grid;place-items:center;
+           font-weight:800;font-size:14px;background:var(--grad);color:#fff;margin-bottom:13px;
+           box-shadow:0 8px 18px -8px rgba(59,130,246,.8)}
+  .step h3{font-size:15px;font-weight:670;margin-bottom:5px}
+  .step p{color:var(--sub);font-size:13.5px;line-height:1.6}
+
+  /* faq */
+  .faq{max-width:760px;margin:38px auto 0}
+  details{background:var(--card);border:1px solid var(--stroke);border-radius:14px;
+          margin-bottom:10px;overflow:hidden;box-shadow:var(--shadow);transition:border-color .2s}
+  details[open]{border-color:var(--stroke2)}
+  details summary{cursor:pointer;font-weight:640;font-size:15px;list-style:none;
+                  padding:17px 50px 17px 19px;position:relative;letter-spacing:-.01em}
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{content:"";position:absolute;right:20px;top:50%;
+        width:9px;height:9px;border-right:2px solid var(--accent);border-bottom:2px solid var(--accent);
+        transform:translateY(-70%) rotate(45deg);transition:transform .22s}
+  details[open] summary::after{transform:translateY(-30%) rotate(-135deg)}
+  details p{color:var(--sub);font-size:14px;padding:0 19px 18px;line-height:1.65;margin:0}
+
+  /* footer */
+  footer{border-top:1px solid var(--stroke);padding:40px 0 52px;text-align:center;background:#fff}
+  footer .flinks{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+  footer .flinks a{font-size:13.5px;color:var(--sub);padding:8px 15px;border-radius:10px;
+                   border:1px solid var(--stroke);transition:.18s;font-weight:550;background:#fff}
+  footer .flinks a:hover{color:var(--accent);border-color:var(--accent);background:#f5f9ff}
+  footer .copy{color:var(--sub2);font-size:13px}
+  footer .fine{color:var(--sub2);font-size:12.5px;margin-top:6px;opacity:.85}
+
+  /* long-form content */
+  .prose{max-width:820px;margin:0 auto}
+  .prose h2{font-size:clamp(21px,3.4vw,28px);letter-spacing:-.03em;margin:36px 0 12px;font-weight:780;text-align:left}
+  .prose h3{font-size:17px;font-weight:700;margin:24px 0 8px;letter-spacing:-.01em}
+  .prose p{color:#3a4658;font-size:16.5px;line-height:1.75;margin:0 0 16px}
+  .prose ul,.prose ol{margin:0 0 16px 22px;color:#3a4658;font-size:16.5px;line-height:1.75}
+  .prose li{margin-bottom:8px}
+  .prose a{color:#3b82f6;font-weight:600}
+  .prose strong{color:#0f172a;font-weight:680}
+  .prose .note{background:#fff;border:1px solid #e4e9f2;border-left:4px solid #3b82f6;
+       border-radius:10px;padding:14px 16px;margin:20px 0;font-size:15.5px;color:#3a4658}
+  .prose table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}
+  .prose th,.prose td{border-bottom:1px solid #e4e9f2;padding:10px 8px;text-align:left;color:#3a4658;vertical-align:top}
+  .prose th{font-weight:700;color:#0f172a}
+  .prose .crumb{font-size:13.5px;color:#8a94ab;margin:0 0 18px}
+  .prose .crumb a{color:#3b82f6;font-weight:600}
+
+  .prose{max-width:820px;margin:0 auto}
+  .prose h2{font-size:clamp(21px,3.4vw,28px);letter-spacing:-.03em;margin:36px 0 12px;font-weight:780;text-align:left}
+  .prose h3{font-size:17px;font-weight:700;margin:24px 0 8px;letter-spacing:-.01em}
+  .prose p{color:#3a4658;font-size:16.5px;line-height:1.75;margin:0 0 16px}
+  .prose ul,.prose ol{margin:0 0 16px 22px;color:#3a4658;font-size:16.5px;line-height:1.75}
+  .prose li{margin-bottom:8px}
+  .prose a{color:#3b82f6;font-weight:600}
+  .prose strong{color:#0f172a;font-weight:680}
+  .prose .note{background:#fff;border:1px solid #e4e9f2;border-left:4px solid #3b82f6;
+       border-radius:10px;padding:14px 16px;margin:20px 0;font-size:15.5px;color:#3a4658}
+  .prose table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}
+  .prose th,.prose td{border-bottom:1px solid #e4e9f2;padding:10px 8px;text-align:left;color:#3a4658;vertical-align:top}
+  .prose th{font-weight:700;color:#0f172a}
+  .prose .crumb{font-size:13.5px;color:#8a94ab;margin:0 0 18px}
+  .prose .crumb a{color:#3b82f6;font-weight:600}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8218995202136403" crossorigin="anonymous"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KCCJD6YDZV"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-KCCJD6YDZV");</script>
+
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/icon-app.png" alt="AniPix"> AniPix</a>
+    <div class="links">
+      <a href="index.html">Home</a>
+      <a href="anime-wallpaper-guide.html">Wallpaper guide</a>
+      <a href="how-to-install-anipix.html">Install</a>
+      <a href="anipix-live-wallpapers.html">Live wallpapers</a>
+      <a href="guides.html">Guides</a>
+      <a href="guides.html">Guides</a>
+      <a href="about.html">About</a>
+      <a href="https://blog.anipix.me/">Blog</a>
+    </div>
+    <a class="btn primary sm navcta" href="https://github.com/nobelfamily537-dev/AniPix-Walls/releases/latest/download/anipix.apk">Get the app</a>
+  </div>
+</nav>
+<main class="wrap prose" style="padding:46px 20px 64px">
+<p class="eyebrow" style="color:#5a6785;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px">Guide</p>
+<h1>Dark Wallpapers on OLED: How Much Battery They Actually Save</h1>
+<p class="updated" style="color:#8a94ab;font-size:14px;margin:10px 0 26px">Last updated: 22 November 2026</p>
+
+<p>An OLED phone screen switches individual pixels off to display black. That is not a marketing detail &mdash; it is a measurable difference in battery use, and it is the reason a dark wallpaper can genuinely extend your day.</p>
+
+<h2>How OLED differs from LCD</h2>
+<p>An LCD screen has a backlight that is always on, with liquid crystals in front of it blocking light to create dark areas. A black pixel on an LCD is a pixel with the backlight still burning behind it. The screen uses the same power whether it is showing white or black.</p>
+<p>An OLED screen has no backlight. Each pixel emits its own light. A black pixel is simply switched off and draws no current. On a large dark area, the difference is real, not theoretical.</p>
+
+<h2>How much does it actually save</h2>
+<p>Independent measurements consistently put the saving at somewhere between 15 and 40 percent of screen power for a mostly-dark interface versus a mostly-white one, depending on brightness. Screen brightness matters more than anything else: at high brightness the saving is larger, because the light-emitting pixels are working harder.</p>
+<p>Two things follow from that:</p>
+<ul>
+<li>A dark wallpaper saves the most at high brightness, which is exactly when you are outdoors and worried about battery.</li>
+<li>At low brightness the saving is small, so if you keep your phone dim, a dark wallpaper is mostly an aesthetic choice.</li>
+</ul>
+
+<h2>What counts as a dark wallpaper</h2>
+<p>Not all dark images are equal. An image that is black in the corners but has a bright subject in the middle will switch on a large block of pixels. For battery purposes, what matters is the total lit area, not the average brightness of the image.</p>
+<p>If battery is the goal, the best wallpapers are ones with large genuine black regions: silhouettes against a black sky, minimal line art on pure black, night scenes where the darkness is actually black rather than dark blue.</p>
+<p>A dark blue wallpaper looks dark to your eye but lights up all three colour channels. A pure black one lights up nothing.</p>
+
+<h2>The always-on display is where it matters most</h2>
+<p>On phones with an always-on display, a small part of the screen stays on constantly. On OLED that costs very little, because most pixels are off. But if your always-on clock sits over a bright wallpaper rather than a black background, the cost goes up.</p>
+<p>This is why most always-on implementations default to black. If yours does not, changing it is one of the highest-value battery settings on the phone.</p>
+
+<h2>Burn-in, and why dark wallpapers help there too</h2>
+<p>OLED pixels dim unevenly over years of use. A bright static element in the same place every day &mdash; a status bar, a clock, a logo in a wallpaper &mdash; can leave a faint ghost.</p>
+<p>A dark wallpaper reduces the overall pixel workload and lowers the risk. So does avoiding wallpapers with a bright high-contrast element in a fixed position. If you use the same wallpaper for years, prefer one without a bright object sitting in the middle of the screen.</p>
+
+<h2>What about LCD phones</h2>
+<p>If your phone has an LCD panel, a dark wallpaper saves nothing. You will still get the aesthetic benefit and slightly better icon contrast, but there is no battery argument. Most budget phones and a few mid-range models still use LCD, so it is worth checking before you optimise for it.</p>
+
+<h2>How to tell which panel you have</h2>
+<p>Look up your exact model and check whether the display is described as AMOLED, OLED, Super AMOLED, P-OLED or LTPO &mdash; all of these are OLED variants. If it says IPS, IPS LCD or TFT, it is LCD.</p>
+<p>A quick practical test: display a full black image in a dark room at full brightness. On OLED the screen looks completely black and blends into the room. On LCD you can usually see a faint grey glow and some backlight bleed at the edges.</p>
+
+<h2>Making a dark wallpaper readable</h2>
+<p>The usual objection to dark wallpapers is that dark icons disappear into them. The fix is not to brighten the wallpaper but to brighten the icons: most launchers let you use a light icon pack, and both Android and iOS have per-appearance icon tinting. A black wallpaper with white icons is both the most battery-efficient and the most legible combination available.</p>
+
+<div style="margin:38px 0 0;padding:18px 20px;border:1px solid #e4e9f2;border-radius:14px;background:#fff"><strong>Written by Lavkush Kumar</strong>, who builds and uses the AniPix wallpaper app. <a href="about.html">About</a> &middot; <a href="contact.html">Contact</a></div>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="flinks">
+      <a href="index.html">Home</a>
+      <a href="guides.html">Guides</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+      <a href="anime-wallpaper-guide.html">Wallpaper guide</a>
+      <a href="how-to-install-anipix.html">Install guide</a>
+      <a href="anipix-live-wallpapers.html">Live wallpapers</a>
+      <a href="https://blog.anipix.me/">Blog</a>
+      <a href="https://space.anipix.me/">Orbit</a>
+      <a href="https://t.me/Lovelyanime_admin">Telegram</a>
+    </div>
+    <p class="copy">&copy; <span id="y"></span> AniPix &middot; Made by an anime fan, for anime fans.</p>
+    <p class="fine">All artwork belongs to its original creators.</p>
+  </div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
