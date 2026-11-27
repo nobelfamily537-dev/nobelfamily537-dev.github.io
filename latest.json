@@ -53,6 +53,24 @@
  "space": [
   {
    "src": "space",
+   "url": "https://space.anipix.me/articles/betelgeuse-dimming-2026.html",
+   "img": "https://space.anipix.me/assets/img/betelgeuse-dimming-2026-1.webp",
+   "title": "Betelgeuse Is Dimming Again, and Astronomers Are Watching Closely",
+   "excerpt": "In October 2026 Betelgeuse began fading, with atmospheric signs matching the Great Dimming. What is happening, and when it will really explode.",
+   "kicker": "Stars · Betelgeuse",
+   "date": "27 November 2026"
+  },
+  {
+   "src": "space",
+   "url": "https://space.anipix.me/articles/parker-solar-probe.html",
+   "img": "https://space.anipix.me/assets/img/parker-solar-probe-1.webp",
+   "title": "Parker Solar Probe: The Fastest Object Humans Have Ever Built",
+   "excerpt": "692,000 km/h, 6.1 million km from the Sun, twenty-nine close passes. How it survives, what switchbacks are, and what it saw.",
+   "kicker": "NASA · The Sun",
+   "date": "27 November 2026"
+  },
+  {
+   "src": "space",
    "url": "https://space.anipix.me/articles/apophis-2029-close-approach.html",
    "img": "https://space.anipix.me/assets/img/apophis-2029-close-approach-1.webp",
    "title": "Apophis 2029: The Asteroid That Will Pass Closer Than Our Satellites",
@@ -86,24 +104,6 @@
    "excerpt": "NASA's Europa Clipper is on its way to Jupiter's icy moon to find out whether its hidden ocean could support life. Here is how the mission works.",
    "kicker": "NASA · Jupiter",
    "date": "3 November 2026"
-  },
-  {
-   "src": "space",
-   "url": "https://space.anipix.me/articles/hera-dimorphos.html",
-   "img": "https://space.anipix.me/assets/img/hera-dimorphos-1.webp",
-   "title": "Hera Arrives at Dimorphos: Inspecting the Asteroid We Hit on Purpose",
-   "excerpt": "ESA's Hera reaches the Didymos system on 4 November 2026 to investigate what NASA's DART impact actually did. First images on 25 November, two CubeSats, and a hunt for a crater that may not exist.",
-   "kicker": "Missions · Planetary Defence",
-   "date": "30 October 2026"
-  },
-  {
-   "src": "space",
-   "url": "https://space.anipix.me/articles/solar-eclipse-2027.html",
-   "img": "https://space.anipix.me/assets/img/solar-eclipse-2027-1.webp",
-   "title": "The 2027 Total Solar Eclipse: The Eclipse of the Century",
-   "excerpt": "On 2 August 2027 the Moon's shadow crosses Spain, North Africa and the Middle East for up to 6 minutes 23 seconds — the longest totality over land in a century. What you'll see, and what India gets.",
-   "kicker": "Sun · Eclipses",
-   "date": "28 October 2026"
   }
  ]
 }
